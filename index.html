@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="lv">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sparkle heart</title>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+
+		<!--! Font-Awesome-->
+		<script
+			src="https://kit.fontawesome.com/39bbe9b596.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!--! CSS - tailwind framework-->
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body
+		class="flex flex-col items-center min-h-screen max-w-full bg-white text-center"
+	>
+		<header class="header-block w-full relative z-10">
+			<div class="container">
+				<div class="header__inner flex flex-row items-center justify-center">
+					<div class="header-logo pr-10">
+						<img
+							class="w-24 mb-9"
+							src="./assets/img/BlackLogo 3.png"
+							alt="Sparkle heart"
+						/>
+					</div>
+					<nav class="header-nav">
+						<ul class="header-nav__list">
+							<li class="header-nav-list font-normal mr-5 ml-5 flex gap-3">
+								<a href="#">Ideja</a>
+								<a href="#">Piesaki Sapni</a>
+								<a href="#">Uzņēmējiem</a>
+								<a href="#">Sapņu banka</a>
+								<a href="#">Sapņus atbalsta</a>
+								<a href="#">99 Iedvesmas stāsti</a>
+								<a class="ml-10" href="#">LV</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<img
+				class="-z-10 absolute w-full h-24"
+				src="./assets/img/Union.png"
+				alt=""
+			/>
+		</header>
+
+		<main
+			class="intro h-screen w-full flex items-center justify-center bg-center bg-cover bg-no-repeat"
+		>
+			<a class="transition-opacity hover:opacity-75" href="#">
+				<img src="./assets/img/Vector.png" alt="Play" />
+			</a>
+		</main>
+		<section class="relative flex items-center justify-center w-full flex-col">
+			<div class="block__inner">
+				<p
+					class="relative z-20 pb-36 pt-28 max-w-xl text-black text-lg font-normal ext-blue-900"
+				>
+					SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem
+					piepildīt pat pārdrošākos sapņus. Šeit satiekas sapņotāji un viņu
+					atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli
+					padarītu par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev
+					piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par
+					Latvijas sievietēm.
+				</p>
+			</div>
+			<img
+				class="-bottom-9 z-10 absolute w-full flex-col"
+				src="./assets/img/Union.png"
+				alt=""
+			/>
+		</section>
+		<section class="gallery w-full relative">
+			<div class="gallery__inner w-full grid grid-flow-col-dense">
+				<img class="row-span-2 h-72" src="./assets/img/Zanda_1.png" alt="" />
+				<img class="row-span-2 h-72" src="./assets/img/Sibilla_4.png" alt="" />
+				<img class="h-36" src="./assets/img/Brinuma_meita-15.png" alt="" />
+				<img class="h-36" src="./assets/img/Alina_1 1.png" alt="" />
+				<img class="row-span-2 h-72" src="./assets/img/Anda_2 1.png" alt="" />
+			</div>
+		</section>
+		<section class="form-links w-full h-full relative pb-36">
+			<img
+				class="w-full flex-col absolute rotate-180 -top-8"
+				src="./assets/img/Union.png"
+				alt=""
+			/>
+			<div class="container">
+				<div
+					class="links__inner flex flex-wrap justify-center gap-x-24 relative py-36"
+				>
+					<div class="flex flex-col link-item gap-y-12">
+						<h3 class="uppercase text-2xl text-blue-900 font-medium">
+							VĒLIES PIEPILDĪT SAVU SAPNI?
+						</h3>
+						<a href="#" class="w-44 text-lg">
+							<button
+								class="py-3 pr-8 pl-8 rounded-2xl bg-yellow-500 text-white font-medium transition hover:bg-yellow-400 active:bg-orange-600"
+							>
+								Sapņotājiem
+							</button>
+						</a>
+					</div>
+					<div class="flex flex-col link-item gap-y-12">
+						<h3 class="uppercase text-2xl text-blue-900 font-medium">
+							VĒLIES PALĪDZĒT KĀDĀM PIEPILDĪT SAPNI?
+						</h3>
+						<a href="#" class="w-44 text-lg">
+							<button
+								class="py-3 pr-8 pl-8 rounded-2xl bg-yellow-500 text-white font-medium transition hover:bg-yellow-400 active:bg-orange-600"
+							>
+								Uzņēmējiem
+							</button>
+						</a>
+					</div>
+				</div>
+				<div class="w-full h-full">
+					<h2 class="uppercase text-3xl text-blue-900 font-medium pb-14">
+						SAZINĀTIES AR MUMS
+					</h2>
+					<form action="#">
+						<div
+							class="form-up flex flex-wrap items-center justify-center gap-3 pb-3"
+						>
+							<input
+								required
+								placeholder="Vārds, Uzvārds*"
+								class="placeholder-blue-900 text-lg font-normal rounded-md bg-gray-200 w-72 text-left p-3"
+								type="text"
+							/>
+							<input
+								required
+								placeholder="E-pasts*"
+								class="placeholder-blue-900 text-lg font-normal rounded-md bg-gray-200 w-72 text-left p-3"
+								type="email"
+							/>
+						</div>
+						<div
+							class="form-bottom flex flex-col justify-center items-center gap-y-3"
+						>
+							<input
+								required
+								placeholder="Telefons*"
+								class="input-width placeholder-blue-900 text-lg font-normal rounded-md bg-gray-200 text-left p-3"
+								type="tel"
+							/>
+							<textarea
+								placeholder="Jautājums, vai komentārs*"
+								name="comment"
+								class="input-width h-56 placeholder-blue-900 text-lg font-normal rounded-md bg-gray-200 text-left p-3 resize-none"
+							></textarea>
+						</div>
+						<p class="mt-4 mb-6 text-left text-blue-900">
+							* obligāti aizpildāmie lauki
+						</p>
+						<div class="flex flex-col gap-12">
+							<div>
+								<input class="bg-gray-200" type="checkbox" name="" id="" />
+								<label
+									class="font-normal text-left text-blue-900"
+									for="checkbox"
+									>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā
+									kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs
+									nepieciešams.</label
+								>
+							</div>
+							<a href="#" class="text-lg text-center">
+								<button
+									type="submit"
+									class="py-3 pr-8 pl-8 rounded-2xl bg-yellow-500 text-white font-medium transition hover:bg-yellow-400 active:bg-orange-600"
+								>
+									Sapņotājiem
+								</button>
+							</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+		<section class="sponsors w-full h-full relative">
+			<img
+				class="w-full flex-col absolute h-44 -top-36"
+				src="./assets/img/Union.png"
+				alt=""
+			/>
+			<div class="container">
+				<h2 class="section-title font-medium text-2xl pt-24 pb-24">
+					ATBALSTĪTĀJI
+				</h2>
+				<div class="flex justify-center items-center flex-wrap gap-x-20 pb-36">
+					<img src="./assets/img/getlogo 1.png" alt="" />
+					<img src="./assets/img/sem_logo-2 1.png" alt="" />
+					<img src="./assets/img/Citybee-logo 1.png" alt="" />
+					<img src="./assets/img/logo1 1.png" alt="" />
+				</div>
+			</div>
+		</section>
+		<footer class="w-full h-full relative">
+			<img
+				class="w-full flex-col absolute rotate-180 -top-8"
+				src="./assets/img/Union 2.png"
+				alt=""
+			/>
+			<div class="container">
+				<div class="footer__inner relative z-20 mt-14 text-white">
+					<ul
+						class="flex place-items-start text-lg flex-wrap justify-between p-5"
+					>
+						<li class="flex flex-col gap-16 mr-6">
+							<a href="#">
+								<img src="./assets/img/GoldenV2Logo 3.png" alt="" />
+							</a>
+							<p class="text-sm">
+								© SparkleHeart 2020.<br />Visas tiesības aizsargātas.
+							</p>
+						</li>
+						<li class="flex flex-col gap-5 mr-16">
+							<a href="#">Ideja</a>
+							<a href="#">Piesaki Sapni</a>
+							<a href="#">Uzņēmējiem</a>
+							<a href="#">Sapņu banka</a>
+							<a href="#">Sapņus atbalsta</a>
+							<a href="#">Iedvesmas stāsti</a>
+						</li>
+						<li class="flex flex-col">
+							<p class="text-2xl pb-5">Biedrība SparkleHeart</p>
+							<p class="pb-2">Reģistrācijas nr. 40008293119</p>
+							<p class="pb-2">Banka: SWEDBANK A/S</p>
+							<p class="pb-2">LV52HABA0551047652465</p>
+						</li>
+						<li class="flex flex-col">
+							<p class="text-2xl text-right pb-5">Juris Gogulis</p>
+							<a
+								href="mailto:juris.gogulis@sparkleheart.org"
+								class="text-right pb-2"
+								>juris.gogulis@sparkleheart.org</a
+							>
+							<a href="tel:+37126890034" class="text-right pb-2"
+								>+37126890034</a
+							>
+							<a
+								href="https://goo.gl/maps/1g8t4WSEh4MUSNkb6"
+								class="text-right pb-2"
+								>Biķernieku iela 24a - 5, LV-1006</a
+							>
+							<div class="socials flex gap-x-2 mt-10">
+								<a href="#">
+									<i class="fa-brands fa-facebook-f text-4xl"></i>
+								</a>
+								<a href="#">
+									<i class="fa-brands fa-instagram text-4xl"></i>
+								</a>
+							</div>
+							<a class="text-right text-sm font-medium mt-4">
+								Privātuma politika
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
