@@ -231,7 +231,7 @@ footer {
 
 @media screen and (max-width: 610px) {
 	.big-text {
-		font-size: 12px;
+		font-size: 12px !important;
 	}
 	.media-order-1 {
 		order: 1;
