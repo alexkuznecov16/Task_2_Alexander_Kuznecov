@@ -215,6 +215,9 @@ footer {
 	.union-img-2 {
 		top: -1rem;
 	}
+	.union-img-3 {
+		top: -1rem;
+	}
 	.form-up {
 		flex-direction: column;
 	}
@@ -232,14 +235,21 @@ footer {
 
 	.text-width {
 		text-align: center;
-		width: 288px;
 		margin: 0 auto;
+		padding-bottom: 10px;
 	}
 	.checkbox-width {
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
 		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.input-width {
+		width: 190px !important;
+		font-size: 12px;
 	}
 }
 
