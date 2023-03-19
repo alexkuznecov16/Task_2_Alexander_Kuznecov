@@ -65,6 +65,7 @@ body.opened {
 
 .open .mobile-menu {
 	display: block;
+	overflow: scroll;
 }
 
 .lang-nav a:first-child {
