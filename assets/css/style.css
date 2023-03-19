@@ -55,6 +55,41 @@ a {
 	opacity: 0.8;
 }
 
+.mobile-menu {
+	display: none;
+}
+
+.mobile-menu.open {
+	display: block;
+}
+
+.lang-nav a:first-child {
+	color: red;
+}
+
+.lang-nav a {
+	transition: 0.2s linear;
+	padding-bottom: 4px;
+	border-bottom: 2px solid #fff;
+}
+.lang-nav a:hover {
+	color: red;
+	border-color: goldenrod;
+}
+
+.mobile-nav a {
+	transition: 0.1s linear;
+	padding-bottom: 4px;
+	border-bottom: 2px solid #fff;
+	display: flex;
+	margin: 0 auto;
+}
+
+.mobile-nav a:hover {
+	font-weight: 600;
+	border-bottom: 2px solid goldenrod;
+}
+
 main {
 	background: url('../img/Sparkle_video.png') no-repeat;
 	background-position: center;
@@ -78,6 +113,7 @@ main {
 .gallery__inner img {
 	width: 100%;
 	object-fit: cover;
+	overflow: hidden;
 	object-position: top;
 	background: bisque;
 }
@@ -129,4 +165,84 @@ footer a:hover {
 
 footer {
 	background-color: #2f4858;
+}
+
+@media screen and (max-width: 1280px) {
+	.links {
+		margin: 0 !important;
+	}
+}
+
+@media screen and (max-width: 1030px) {
+	.gallery__inner {
+		grid-template-columns: 50% 50%;
+		grid-auto-flow: row !important;
+	}
+	.gallery__inner img .h-36 {
+		order: -1;
+	}
+
+	.gallery__inner img .h-36:last-child {
+		order: 1;
+	}
+	.links__inner {
+		row-gap: 100px;
+		justify-content: center;
+	}
+	.swedbank,
+	.links {
+		display: none;
+	}
+	.header-nav-list {
+		display: none !important;
+	}
+	.header__inner {
+		justify-content: space-between !important;
+		margin: 0 10px;
+	}
+	.fa-solid.fa-bars {
+		display: block !important;
+	}
+}
+
+@media screen and (max-width: 610px) {
+	.gallery__inner img {
+		object-position: center;
+	}
+	.union-img {
+		bottom: -1rem;
+	}
+	.union-img-2 {
+		top: -1rem;
+	}
+	.form-up {
+		flex-direction: column;
+	}
+	.input-width {
+		width: 288px;
+	}
+
+	form {
+		width: auto !important;
+	}
+
+	.text-width:first-child {
+		padding-bottom: 15px;
+	}
+
+	.text-width {
+		text-align: center;
+		width: 288px;
+		margin: 0 auto;
+	}
+	.checkbox-width {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		margin: 0 auto;
+	}
+}
+
+.mobile-menu.open {
+	display: block;
 }

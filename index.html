@@ -31,7 +31,9 @@
 					</div>
 					<nav class="header-nav">
 						<ul class="header-nav__list">
-							<li class="header-nav-list font-normal mr-5 ml-5 flex gap-3">
+							<li
+								class="header-nav-list font-normal mr-5 ml-5 flex gap-3 items-center"
+							>
 								<a href="#">Ideja</a>
 								<a href="#">Piesaki Sapni</a>
 								<a href="#">Uzņēmējiem</a>
@@ -42,6 +44,39 @@
 							</li>
 						</ul>
 					</nav>
+					<i
+						id="menu-open"
+						class="fa-solid fa-bars cursor-pointer hidden text-3xl"
+					></i>
+				</div>
+			</div>
+			<div class="mobile-menu w-full h-screen absolute top-0 left-0 bg-white">
+				<div
+					class="mobile-inner flex flex-col justify-center items-center w-full"
+				>
+					<div class="up_block flex justify-between pb-12 w-full">
+						<img
+							class="w-24 mb-9"
+							src="./assets/img/BlackLogo 3.png"
+							alt="Sparkle heart"
+						/>
+						<i class="fa-solid fa-xmark text-3xl pt-6 pr-6"></i>
+					</div>
+
+					<!-- Language navigation -->
+					<div class="flex lang-nav text-lg font-medium pb-16">
+						<a class="pb-1 border-b-2 border-yellow-500" href="#">LV</a>
+						<a class="ml-10 mr-10" href="#">EN</a>
+						<a class="" href="#">RU</a>
+					</div>
+					<ul class="mobile-nav flex flex-col text-lg font-medium">
+						<a href="#">Ideja</a>
+						<a href="#">Piesaki Sapni</a>
+						<a href="#">Uzņēmējiem</a>
+						<a href="#">Sapņu banka</a>
+						<a href="#">Sapņus atbalsta</a>
+						<a href="#">99 Iedvesmas stāsti</a>
+					</ul>
 				</div>
 			</div>
 			<img
@@ -72,7 +107,7 @@
 				</p>
 			</div>
 			<img
-				class="-bottom-9 z-10 absolute w-full flex-col"
+				class="-bottom-9 z-10 absolute w-full flex-col union-img"
 				src="./assets/img/Union.png"
 				alt=""
 			/>
@@ -82,13 +117,13 @@
 				<img class="row-span-2 h-72" src="./assets/img/Zanda_1.png" alt="" />
 				<img class="row-span-2 h-72" src="./assets/img/Sibilla_4.png" alt="" />
 				<img class="h-36" src="./assets/img/Brinuma_meita-15.png" alt="" />
-				<img class="h-36" src="./assets/img/Alina_1 1.png" alt="" />
+				<img class="order-1 h-36" src="./assets/img/Alina_1 1.png" alt="" />
 				<img class="row-span-2 h-72" src="./assets/img/Anda_2 1.png" alt="" />
 			</div>
 		</section>
 		<section class="form-links w-full h-full relative pb-36">
 			<img
-				class="w-full flex-col absolute rotate-180 -top-8"
+				class="w-full flex-col absolute rotate-180 -top-8 union-img-2"
 				src="./assets/img/Union.png"
 				alt=""
 			/>
@@ -96,7 +131,7 @@
 				<div
 					class="links__inner flex flex-wrap justify-center gap-x-24 relative py-36"
 				>
-					<div class="flex flex-col link-item gap-y-12">
+					<div class="links-block flex flex-col link-item gap-y-12">
 						<h3 class="uppercase text-2xl text-blue-900 font-medium">
 							VĒLIES PIEPILDĪT SAVU SAPNI?
 						</h3>
@@ -108,7 +143,7 @@
 							</button>
 						</a>
 					</div>
-					<div class="flex flex-col link-item gap-y-12">
+					<div class="links-block flex flex-col link-item gap-y-12">
 						<h3 class="uppercase text-2xl text-blue-900 font-medium">
 							VĒLIES PALĪDZĒT KĀDĀM PIEPILDĪT SAPNI?
 						</h3>
@@ -157,11 +192,11 @@
 								class="input-width h-56 placeholder-blue-900 text-lg font-normal rounded-md bg-gray-200 text-left p-3 resize-none"
 							></textarea>
 						</div>
-						<p class="mt-4 mb-6 text-left text-blue-900">
+						<p class="text-width mt-4 mb-6 text-left text-blue-900">
 							* obligāti aizpildāmie lauki
 						</p>
-						<div class="flex flex-col gap-12">
-							<div>
+						<div class="text-width flex flex-col gap-12">
+							<div class="checkbox-width">
 								<input class="bg-gray-200" type="checkbox" name="" id="" />
 								<label
 									class="font-normal text-left text-blue-900"
@@ -213,15 +248,12 @@
 					<ul
 						class="flex place-items-start text-lg flex-wrap justify-between p-5"
 					>
-						<li class="flex flex-col gap-16 mr-6">
+						<li class="flex flex-col gap-28 mr-6 img-list">
 							<a href="#">
 								<img src="./assets/img/GoldenV2Logo 3.png" alt="" />
 							</a>
-							<p class="text-sm">
-								© SparkleHeart 2020.<br />Visas tiesības aizsargātas.
-							</p>
 						</li>
-						<li class="flex flex-col gap-5 mr-16">
+						<li class="flex flex-col gap-5 mr-16 links">
 							<a href="#">Ideja</a>
 							<a href="#">Piesaki Sapni</a>
 							<a href="#">Uzņēmējiem</a>
@@ -229,13 +261,13 @@
 							<a href="#">Sapņus atbalsta</a>
 							<a href="#">Iedvesmas stāsti</a>
 						</li>
-						<li class="flex flex-col">
+						<li class="flex flex-col swedbank">
 							<p class="text-2xl pb-5">Biedrība SparkleHeart</p>
 							<p class="pb-2">Reģistrācijas nr. 40008293119</p>
 							<p class="pb-2">Banka: SWEDBANK A/S</p>
 							<p class="pb-2">LV52HABA0551047652465</p>
 						</li>
-						<li class="flex flex-col">
+						<li class="flex flex-col info">
 							<p class="text-2xl text-right pb-5">Juris Gogulis</p>
 							<a
 								href="mailto:juris.gogulis@sparkleheart.org"
@@ -250,7 +282,10 @@
 								class="text-right pb-2"
 								>Biķernieku iela 24a - 5, LV-1006</a
 							>
-							<div class="socials flex gap-x-2 mt-10">
+							<a class="open-other font-bold text-right text-lg hidden" href="#"
+								>Skatīt rekvizītus</a
+							>
+							<div class="socials flex gap-x-10 mt-10">
 								<a href="#">
 									<i class="fa-brands fa-facebook-f text-4xl"></i>
 								</a>
@@ -258,9 +293,15 @@
 									<i class="fa-brands fa-instagram text-4xl"></i>
 								</a>
 							</div>
-							<a class="text-right text-sm font-medium mt-4">
-								Privātuma politika
-							</a>
+						</li>
+					</ul>
+					<ul class="flex justify-between items-center p-4">
+						<li class="flex flex-col text-left">
+							<p class="text-sm">© SparkleHeart 2020.</p>
+							<p class="text-sm">Visas tiesības aizsargātas.</p>
+						</li>
+						<li>
+							<a href="#"> Privātuma politika </a>
 						</li>
 					</ul>
 				</div>
