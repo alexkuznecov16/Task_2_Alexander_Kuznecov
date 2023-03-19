@@ -154,7 +154,20 @@ form {
 .footer__inner ul {
 	margin: 0 10px;
 }
+/* 
+fa-facebook-f
+fa-instagram */
+i {
+	transition: 0.2s linear;
+}
 
+.fa-facebook-f:hover {
+	color: blue;
+}
+
+.fa-instagram:hover {
+	color: orangered;
+}
 footer a {
 	transition: 0.2s linear;
 }
@@ -174,6 +187,12 @@ footer {
 }
 
 @media screen and (max-width: 1030px) {
+	.footer__inner ul {
+		margin: 0 !important;
+	}
+	.rekviziti {
+		display: block;
+	}
 	.gallery__inner {
 		grid-template-columns: 50% 50%;
 		grid-auto-flow: row !important;
@@ -191,7 +210,7 @@ footer {
 	}
 	.swedbank,
 	.links {
-		display: none;
+		display: none !important;
 	}
 	.header-nav-list {
 		display: none !important;
@@ -206,17 +225,20 @@ footer {
 }
 
 @media screen and (max-width: 610px) {
+	.media-order-1 {
+		order: 1;
+	}
 	.gallery__inner img {
 		object-position: center;
 	}
 	.union-img {
-		bottom: -1rem;
+		bottom: -1rem !important;
 	}
 	.union-img-2 {
-		top: -1rem;
+		top: -1rem !important;
 	}
 	.union-img-3 {
-		top: -1rem;
+		top: -1rem !important;
 	}
 	.form-up {
 		flex-direction: column;
@@ -246,10 +268,35 @@ footer {
 	}
 }
 
+@media screen and (max-width: 543px) {
+	.media-order-1 {
+		font-size: 10px;
+	}
+	.info {
+		padding-top: 20px;
+	}
+	.info .socials {
+		margin-left: 0;
+	}
+	.info p,
+	.info a {
+		text-align: left !important;
+	}
+}
+
 @media screen and (max-width: 320px) {
 	.input-width {
 		width: 190px !important;
 		font-size: 12px;
+	}
+	.info a {
+		font-size: 12px;
+	}
+	.order-1 p {
+		padding-top: 20px;
+	}
+	.info a {
+		word-break: break-word;
 	}
 }
 
