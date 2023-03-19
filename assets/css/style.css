@@ -27,7 +27,8 @@ h6 {
 	border: none;
 }
 
-a {
+a,
+i {
 	cursor: pointer;
 }
 
@@ -55,11 +56,14 @@ a {
 	opacity: 0.8;
 }
 
+body.opened {
+	overflow: hidden !important;
+}
 .mobile-menu {
 	display: none;
 }
 
-.mobile-menu.open {
+.open .mobile-menu {
 	display: block;
 }
 
