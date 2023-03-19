@@ -82,8 +82,6 @@ body.opened {
 }
 
 .mobile-nav a {
-	font-size: 12px;
-	line-height: 15px;
 	transition: 0.1s linear;
 	padding-bottom: 4px;
 	border-bottom: 2px solid #fff;
